@@ -29,6 +29,9 @@ button {
 
 header {
   background-color: #f5f7fa;
+  background-color: #f5f7fa80;
+
+
 }
 
 .container {
@@ -280,4 +283,142 @@ header {
     width: 100%;
     max-width: 250px;
   }
+}
+
+.header-menu {}
+
+.header-mn {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 36px;
+  leading-trim: NONE;
+  line-height: 44px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #4D4D4D;
+  margin-bottom: 12px;
+}
+
+.header-mnn {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #717171;
+  margin-bottom: 16px;
+}
+
+.imges {
+  display: flex;
+  justify-content: center;
+  gap: 140px;
+}
+
+.header-mn-h1 {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 36px;
+  leading-trim: NONE;
+  line-height: 44px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #4D4D4D;
+  margin-top: 50px;
+  margin-bottom: 10px;
+
+}
+
+.header-mn-h6 {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #717171;
+
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 145px;
+  margin-bottom: 47px;
+
+}
+
+.card {
+  padding: 24px 16px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 1px 1px rgba(76, 75, 75, 0.808);
+}
+
+.icon-img {
+  text-align: center;
+}
+
+.icon-text {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 28px;
+  leading-trim: NONE;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #4D4D4D;
+  margin-top: 13px;
+  margin-bottom: 3px;
+}
+
+.icon-p {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #717171;
+}
+
+.header-end {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.right{
+  margin: 85.5px 0px;
+}
+.header-end-text {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 36px;
+  leading-trim: NONE;
+  line-height: 44px;
+  letter-spacing: 0%;
+  color: #4D4D4D;
+}
+
+.header-end-p {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #717171;
+  margin: 19px 0px;
 }
