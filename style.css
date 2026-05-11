@@ -911,3 +911,20 @@ position: relative;
   cursor: pointer;
   transition: 0.3s;
 }
+
+@media (max-width: 768px) {
+ .imges{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+ }
+ .imges img{
+  width: 40px;
+  height: auto;
+ }
+ .card{
+  
+ }
+
+}
+  

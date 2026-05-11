@@ -1,0 +1,569 @@
+/* =============================================
+   responsive.css — iPhone uchun (375px–430px)
+   HTML faylingizga qo'shing:
+   <link rel="stylesheet" href="./responsive.css">
+   style.css dan KEYIN ulang
+   ============================================= */
+
+@media (max-width: 720px) {
+
+  /* ─── UMUMIY ─── */
+  * {
+    box-sizing: border-box;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  /* ─── NAVBAR ─── */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+    position: relative;
+  }
+
+  .logo img {
+    width: 120px;
+    height: auto;
+  }
+
+  /* Hamburger tugmasi */
+  .bars {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  .bars span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #263238;
+    border-radius: 2px;
+  }
+
+  /* Mobil menyu */
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 998;
+    padding: 80px 24px 24px;
+    gap: 8px;
+    list-style: none;
+    margin: 0;
+    overflow-y: auto;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu li {
+    width: 100%;
+  }
+
+  .menu li a {
+    display: block;
+    font-size: 18px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: #263238;
+    text-decoration: none;
+  }
+
+  .menu .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #263238;
+  }
+
+  .menu .login,
+  .menu .signup {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 8px;
+    font-size: 16px;
+  }
+
+  .menu .signup {
+    background-color: #4caf50;
+    color: #fff !important;
+  }
+
+  /* ─── CAROUSEL / HEADER CENTER ─── */
+  .header__center {
+    padding: 16px 0;
+  }
+
+  .carousel__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 0 16px;
+  }
+
+  .header__center-left {
+    width: 100%;
+    order: 2;
+  }
+
+  .header__center-right {
+    width: 100%;
+    order: 1;
+  }
+
+  .header__center-right img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .header-title {
+    font-size: 26px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+
+  .header-text {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .header-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .carousel__dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  /* ─── MODAL ─── */
+  .modal {
+    padding: 16px;
+  }
+
+  .modal__box {
+    width: 100%;
+    max-width: 100%;
+    padding: 24px 16px;
+    border-radius: 12px;
+  }
+
+  .modal__box h2 {
+    font-size: 22px;
+  }
+
+  .modal__box input {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+  }
+
+  .modal__btn,
+  .login__btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+
+  /* ─── OUR CLIENTS ─── */
+  .header-menu {
+    padding: 24px 16px;
+    text-align: center;
+  }
+
+  .header-mn {
+    font-size: 24px;
+  }
+
+  .header-mnn {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .imges {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    justify-items: center;
+    margin-bottom: 32px;
+  }
+
+  .imges img {
+    width: 70px;
+    height: auto;
+  }
+
+  /* ─── CARDS (3 ta icon card) ─── */
+  .header-mn-h1 {
+    font-size: 22px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+  }
+
+  .header-mn-h6 {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .card {
+    width: 100%;
+    text-align: center;
+    padding: 20px 16px;
+    border-radius: 12px;
+  }
+
+  .icon-img img {
+    width: 48px;
+    height: auto;
+    margin-bottom: 12px;
+  }
+
+  .icon-text {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .icon-p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  /* ─── HEADER END (rasm + matn) ─── */
+  .header-end {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .hd-end-img img {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .header-end-text {
+    font-size: 22px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+
+  .header-end-p {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+
+  /* ─── SECTION ─── */
+  .section-top {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 16px;
+    text-align: center;
+  }
+
+  .section-h1 {
+    font-size: 24px;
+  }
+
+  .section-h2 {
+    font-size: 20px;
+  }
+
+  .section-h6 {
+    font-size: 14px;
+  }
+
+  .section-right {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .section-right-top,
+  .section-right-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .section-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px 8px;
+    border-radius: 10px;
+  }
+
+  .icon-section img {
+    width: 36px;
+    height: auto;
+    margin-bottom: 8px;
+  }
+
+  .text-section h1 {
+    font-size: 18px;
+  }
+
+  .text-section p {
+    font-size: 12px;
+  }
+
+  /* ─── SECTION MAIN ─── */
+  .section-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px 16px;
+    text-align: center;
+  }
+
+  .section-main-img img {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .section-main-text {
+    font-size: 22px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+
+  .section-main-p {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+
+  /* ─── SECTION BOTTOM (testimonial) ─── */
+  .section-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px 16px;
+    text-align: center;
+  }
+
+  .section-bottom-img img {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .section-bottom-p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .section-bottom-h4 {
+    font-size: 16px;
+    margin-top: 12px;
+  }
+
+  .section-bottom-h6 {
+    font-size: 13px;
+  }
+
+  .section-bottom-imges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .section-bottom-imges img {
+    width: 50px;
+    height: auto;
+  }
+
+  .section-bt-a {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+  }
+
+  /* ─── FOOTER TOP ─── */
+  .footer-top {
+    padding: 24px 16px;
+    text-align: center;
+  }
+
+  .footer-h1 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .footer-p {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .footer-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer-card {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .footer-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* ─── FOOTER POSITION CARDS ─── */
+  .footer-postion,
+  .footer-postion-two,
+  .footer-postion-three {
+    padding: 20px 16px;
+    text-align: center;
+  }
+
+  .postion-h1 {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+
+  .postion-a {
+    font-size: 14px;
+  }
+
+  /* ─── FOOTER END ─── */
+  .footer-end {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 24px 16px;
+    text-align: center;
+  }
+
+  .footer-logo img {
+    width: 130px;
+    height: auto;
+    margin-bottom: 12px;
+  }
+
+  .footer-h1-left {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .footer-h2-left {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+
+  .footer-logos {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .footer-logos img {
+    width: 28px;
+    height: auto;
+  }
+
+  .footer-main {
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+    text-align: left;
+  }
+
+  .footer-main-link {
+    flex: 1;
+  }
+
+  .footer-main-text {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .footer-main-link ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-main-link ul li {
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
+
+  .footer-right-text {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .footer-right input {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+
+  /* ─── BR teglarini o'chirish (mobilda chiroyli ko'rinish uchun) ─── */
+  br {
+    display: none;
+  }
+}
